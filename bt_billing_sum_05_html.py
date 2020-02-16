@@ -204,8 +204,6 @@ pv_ConSalIte.to_excel(writer, sheet_name= 'by_Country_Sales_Item', index=True,he
 
 
 writer.close()
-# In[316]:
-
 
 pv_contrySale.plot(kind='bar',figsize=(12,8),subplots=True)
 plt.subplots_adjust(bottom = 0.4)
@@ -213,10 +211,6 @@ plt.savefig(f'{newDir}/Sale_Country_%s.png' %filename)
 plt.tight_layout()
 plt.show()
 
-# In[ ]:
 print(solddata.corr())
 print("Upto data total sold Qty",solddata['Qty'].sum())
 print("Upto data total sold Qty",solddata['Node Qty'].sum())
-
-
-
