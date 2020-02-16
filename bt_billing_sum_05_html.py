@@ -1,33 +1,19 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[300]:
-
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-
-
-# In[301]:
-
-
 import datetime
 import sys
 import pathlib
 import os
-
-# In[302]:
-
 
 try:
     filename = sys.argv[1]
 except:
     print ("\n- Fail, you must pass in excel file name xxxx.xlsx")
     sys.exit()
-
-
-# In[303]:
 
 
 filename = '%s' % filename
@@ -229,7 +215,6 @@ plt.show()
 
 # In[ ]:
 print(solddata.corr())
-print(billdata.corr())
 print("Upto data total sold Qty",solddata['Qty'].sum())
 print("Upto data total sold Qty",solddata['Node Qty'].sum())
 
